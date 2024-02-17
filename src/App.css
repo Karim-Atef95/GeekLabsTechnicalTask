@@ -1,0 +1,347 @@
+.website-bg {
+  background-color: #202020;
+}
+.vertical-line {
+  position: relative;
+  width: 50px;
+  height: 10px; /* Adjust the height of the line */
+  margin-right: 12px; /* Adjust the margin to position the line */
+}
+
+.vertical-line::after {
+  content: "";
+  position: absolute;
+  top: -12px;
+  bottom: 0;
+  width: 4px;
+  /* Adjust the width of the curved ends */
+  background-color: #53acff; /* Adjust the color of the line */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* body {
+  background: gray;
+} */
+
+.fg--search {
+  margin-top: 10px;
+  position: relative;
+}
+
+.fg--search input {
+  width: 100%;
+  display: block;
+}
+
+.fg--search button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.bell-icon {
+  position: relative;
+  margin-top: 15px;
+  font-size: 25px;
+  color: #53acff;
+}
+.notification-number {
+  position: absolute;
+  top: -4px;
+  left: 37%;
+  font-size: 8px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #118f4b;
+  color: white;
+}
+.accordion-container {
+  padding: 0px 10px 0px 10px;
+}
+.x-mark-font {
+  font-size: 8px;
+}
+.container-chosen-category {
+  min-height: 50px;
+}
+.p-chosen-item {
+  max-height: 20px;
+  font-size: 12px;
+  padding: 1px;
+  background-color: #53acff;
+  color: #202020;
+}
+.icon-search-filter {
+  opacity: 0.5;
+}
+.vertical-line-left-filter {
+  position: relative;
+  width: 1px;
+  height: 200px; /* Adjust the height of the line */
+  margin-left: 12px; /* Adjust the margin to position the line */
+}
+.vertical-line-left-filter::after {
+  content: "";
+  position: absolute;
+  top: -12px;
+  bottom: 0;
+  width: 4px;
+  /* Adjust the width of the curved ends */
+  background-color: #333; /* Adjust the color of the line */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 0;
+}
+.vertical-line-right-filter {
+  position: relative;
+  width: 1px;
+  height: 160px; /* Adjust the height of the line */
+  /* margin-left: 12px;  */
+  /* Adjust the margin to position the line */
+}
+.vertical-line-right-filter::after {
+  content: "";
+  position: absolute;
+  top: -12px;
+  bottom: 0;
+  width: 4px;
+  /* Adjust the width of the curved ends */
+  background-color: #333; /* Adjust the color of the line */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.item {
+  color: #333;
+  /* Default text color */
+  /* Default background color */
+  transition: color 0.3s, background-color 0.3s;
+  /* Smooth transition effect */
+}
+.item:hover {
+  color: #fff;
+  /* Text color on hover */
+  background-color: #007bff;
+  /* Background color on hover */
+}
+.btn-apply {
+  width: 40%;
+}
+.ind-1 {
+  z-index: 1;
+}
+.ind-2 {
+  z-index: 2;
+}
+.ind-3 {
+  z-index: 3;
+}
+/* side bar */
+.sidebar-expand {
+  width: 280px;
+  animation: shake 1s infinite; /* Apply the shake animation */
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
+.sidebar-collapse {
+  transition: width 0.3s ease; /* Add a smooth transition effect on width changes */
+  animation: none; /* Stop the animation on hover */
+}
+.sidebarBackground {
+  background-color: #181818;
+}
+.sidebarColor {
+  color: white;
+}
+.img-collapse {
+  width: 50px;
+  height: 40px;
+}
+.bell-collapse {
+  font-size: 30px;
+}
+.bell-paragraph-collapse {
+  display: none;
+}
+/* .bell-paragraph-collapse:hover::after {
+  content: " New Content On Hover"; 
+}*/
+/*
+.bell-paragraph-collapse:hover {
+  color: #007bff;
+  /* content: " New Content On Hover"; 
+} */
+.icon-span-container:hover {
+  color: #53acff;
+}
+.icon-span-container-ongoing:hover {
+  color: #53acff;
+}
+
+.training-collapse {
+  font-size: 30px;
+}
+.training-paragraph-collapse {
+  display: none;
+}
+.automation-collapse {
+  font-size: 30px;
+}
+.automation-paragraph-collapse {
+  display: none;
+}
+.portfolio-collapse {
+  font-size: 30px;
+}
+.portfolio-paragraph-collapse {
+  display: none;
+}
+.trading-collapse {
+  font-size: 30px;
+}
+.trading-paragraph-collapse {
+  display: none;
+}
+
+.acc-h {
+  min-height: 50px;
+}
+/* filter */
+.filter-bg {
+  background-color: #181818;
+}
+.bg-container-chosen {
+  background-color: #202020;
+}
+.bg-stock {
+  background-color: #202020;
+}
+.bg-ticker {
+  background-color: #313131;
+  color: #737373;
+  padding: 5px;
+  border: none;
+}
+.fa-search {
+  color: #737373;
+}
+.bg-p-filter-industry {
+  background-color: #202020;
+  color: white;
+}
+.radio-color {
+  background-color: #494949;
+  border: #494949;
+}
+.btn-apply {
+  background-color: #53acff;
+  color: white;
+}
+.btn-apply:hover {
+  background-color: #53acff !important;
+}
+.font-twelve {
+  font-size: 12px;
+}
+.font-fifteen {
+  font-size: 15px;
+}
+.font-twenty-four {
+  font-size: 24px;
+}
+
+.margin-above-asset {
+  margin-top: 6px;
+}
+.filter-strategy-assets-colors {
+  opacity: 0.5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  transition: box-shadow 0.3s;
+}
+.filter-strategy-assets-colors:hover {
+  opacity: 1;
+  box-shadow: 0px 10px 10px -10px white, 0px -10px 10px -10px white;
+  background-color: #007bff;
+}
+/* alerts */
+.pad-alerts {
+  padding-left: 25px;
+}
+.text-filter-applied {
+  color: #979797;
+}
+.accord-item-bg {
+  background-color: #313131;
+}
+.accord-item-border {
+  border-color: #313131;
+}
+.bg-input {
+  background-color: #313131;
+  color: #737373;
+  padding: 5px;
+  border: #313131;
+}
+.border-alert-right {
+  border-right: 1px solid #414040;
+}
+.accordion-item {
+  color: white;
+}
+.accordion-item:hover {
+  color: #53acff;
+}
+.number-color-green {
+  color: #118f4b;
+}
+.number-color-red {
+  color: #d94111;
+}
+/* Fonts */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+  font-family: "Poppins", sans-serif;
+}
